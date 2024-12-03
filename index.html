@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionador de color</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main id="main">
+        <div class="hsl-container">
+            <p id="hsl-display">
+                hsl(<span id="h-value">0</span>deg, <span id="s-value">50</span>%, <span id="l-value">50</span>%)
+            </p>
+
+            <div class="hsl-selector">
+                <div class="input-container">
+                    <label for="h-range">Hue:</label>
+                    0<input type="range" id="h-range" value="0" min="0" max="360" step="1">360
+                </div>
+
+                <div class="input-container">
+                    <label for="s-range">Saturation:</label>
+                    0<input type="range" id="s-range" value="50" min="0" max="100" step="1">100
+                </div>
+
+                <div class="input-container">
+                    <label for="l-range">Lightness:</label>
+                    0<input type="range" id="l-range" value="50" min="0" max="100" step="1">100
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
